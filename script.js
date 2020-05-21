@@ -30,7 +30,7 @@ $(document).ready(function () {
 
             console.log(trailerUrl);
 
-            $("#youVid").append(`<iframe width="560" height="315" src="${trailerUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+            $("#youVid").append(`<video controls width="560" height="315"> <source type="video/mp4" src="${trailerUrl}"> </video>`);
 
 
         });
@@ -69,12 +69,11 @@ $(document).ready(function () {
 
 
                 var card1 = $("<card>");
-                card1.addclass()
+
 
 
                 $("#resStream").append(`<div>${streamApp}</div>`);
                 $("#resStream").append(iconEl);
-
 
 
 
