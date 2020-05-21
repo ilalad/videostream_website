@@ -1,7 +1,7 @@
 /*Global classes*/
     body{
-      color: #40404F;
-      background-color: #8abad3ff;
+    color: #40404F;
+    background-color: #8abad3ff
     }
     p{
       font-size: 30px;
@@ -17,8 +17,8 @@
     float: left;
     font-family: 'Lobster', cursive;
     text-decoration: underline;
-    
     }
+  
 /*Nav Bar*/
     nav{
       text-align: center;
@@ -96,18 +96,18 @@
       box-shadow: 0 5px #666;
       transform: translateY(4px);
     }
-
     ::placeholder{
       color: #40404F;
       opacity: 50%;
     
     }
-
     #userMovieInput{
       font-family: 'Saira Stencil One', cursive;
       font-size: 25px;
       height: 50px;
     }
+/*Card*/
+
 /*Services & Logos*/
     .titles img{
       background-color: #8abad3ff;
@@ -119,6 +119,8 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+
+    
 /*Footer*/
     .footer-copyright{
       text-align: center;
