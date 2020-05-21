@@ -66,6 +66,20 @@ label{
 #searchMovieBtn{
   font-size: 150%;
   width: 10%;
+  background-color: green;
+  border-radius: 8px;
+  font-family: 'Lobster', cursive;
+  border: none;
+  cursor: pointer;
+
+}
+#searchMovieBtn:hover {
+background-color: #50c878 ;
+}
+
+#searchMovieBtn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 ::placeholder{
@@ -73,6 +87,7 @@ label{
   opacity: 50%;
 
 }
+
 #userMovieInput{
   font-family: 'Saira Stencil One', cursive;
   font-size: 20px;
