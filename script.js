@@ -1,10 +1,6 @@
+
 $(document).ready(function () {
     $(".slider").slider({ full_width: true });
-});
-
-
-
-$(document).ready(function () {
 
     //we need to make a btn click event that fires when the searchMovie btn is clicked
     //once btn click works the btn click should fire the ajax call
@@ -59,20 +55,23 @@ $(document).ready(function () {
                 var streamApp = response.results[0].locations[i].display_name;
                 console.log(streamApp);
 
+                var streamIcon = response.results[0].locations[i].icon
+                console.log(streamIcon);
+
+                var iconEl = $("<img>")
+
+                iconEl.attr("src", streamIcon)
+
+                iconEl.attr("alt", streamApp)
+
                 $("#resStream").append(`<div>${streamApp}</div>`);
+                $("#resStream").append(iconEl);
 
             }
 
-
-
-
-
         });
 
-
-
     });
-
 
 });
 
