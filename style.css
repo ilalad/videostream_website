@@ -46,6 +46,7 @@ p{
 }
 #about{
   padding-right: 30px;
+  text-decoration: underline;
 
 }
 .titles{
@@ -56,6 +57,7 @@ p{
 font-size: 50px;
 float: left;
 font-family: 'Lobster', cursive;
+text-decoration: underline;
 
 }
 label{
@@ -63,6 +65,7 @@ label{
   font-size: 50px;
   float: left;
   font-family: 'Lobster', cursive;
+  text-decoration: underline;
 }
 
 #have{
@@ -113,5 +116,8 @@ background-color: #50c878 ;
 }
 .footer-copyright{
   text-align: center;
+}
+#copyright{
+  font-size: 20px;
 }
 /*
