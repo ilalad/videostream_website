@@ -1,124 +1,128 @@
-body{
-  color: #40404F;
-  background-color: #8abad3ff;
-}
+/*Global classes*/
+    body{
+      color: #40404F;
+      background-color: #8abad3ff;
+    }
+    p{
+      font-size: 30px;
+      display: inline;
+    
+    }
+    .titles{
+      text-align: center;
+      font-family: 'Puritan', sans-serif;
+    }
+    .section{
+    font-size: 50px;
+    float: left;
+    font-family: 'Lobster', cursive;
+    text-decoration: underline;
+    
+    }
+/*Nav Bar*/
+    nav{
+      text-align: center;
+      height: 100px;
+      background-color:  #40404F;
+    }
+    #sNav{
+    font-size: 500%;
+    }
+/*About section*/
+    header{
+        font-family: 'Be Vietnam', sans-serif;   
+        text-align: center;
+    }
+    #about{
+      padding-right: 30px;
+      text-decoration: underline;
+    
+    }
+    .stron {
+      font-family: 'Saira Stencil One', cursive;
+      margin-top: 0%;
+    }
 
-nav{
-  text-align: center;
-  height: 100px;
-  background-color:  #40404F;
-}
-#sNav{
-font-size: 500%;
-}
+    #sP{
+      display: inline;
+    }
+    #shows{
+      display: inline;
+      text-align:center;
+    }
+    #sBtm{
+     font-size: 30px;
+    }
 
-header{
-    font-family: 'Be Vietnam', sans-serif;   
-    text-align: center;
-}
+    .save{
+      font-size: 30px;  
+    }
+    #have{
+      display: inline;
+     }
+     #want{
+      display: inline;
+    }
 
-.stron {
-  font-family: 'Saira Stencil One', cursive;
-  margin-top: 0%;
+/*Popular*/
+    label{
+      color: #40404F;
+      font-size: 50px;
+      float: left;
+      font-family: 'Lobster', cursive;
+      text-decoration: underline;
+    }
+    #have{
+     display: inline;
+    }
+    #want{
+     display: inline;
+    }
+/*Search*/
+    #searchMovieBtn{
+      font-size: 150%;
+      width: 40%;
+      background-color: green;
+      border-radius: 8px;
+      font-family: 'Lobster', cursive;
+      border: none;
+      cursor: pointer;
+    }
+    #searchMovieBtn:hover {
+    background-color: #50c878 ;
+    }
 
-}
+    #searchMovieBtn:active {
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
 
-#sP{
-  display: inline;
-}
-#shows{
-  display: inline;
-  text-align:center;
-}
-#sBtm{
- font-size: 30px;
-}
+    ::placeholder{
+      color: #40404F;
+      opacity: 50%;
+    
+    }
 
-.save{
-  font-size: 30px;  
-}
-
-
-p{
-  font-size: 30px;
-  display: inline;
-
-}
-#about{
-  padding-right: 30px;
-  text-decoration: underline;
-
-}
-.titles{
-  text-align: center;
-  font-family: 'Puritan', sans-serif;
-}
-.section{
-font-size: 50px;
-float: left;
-font-family: 'Lobster', cursive;
-text-decoration: underline;
-
-}
-label{
-  color: #40404F;
-  font-size: 50px;
-  float: left;
-  font-family: 'Lobster', cursive;
-  text-decoration: underline;
-}
-
-#have{
- display: inline;
-}
-#want{
- display: inline;
-}
-#searchMovieBtn{
-  font-size: 150%;
-  width: 40%;
-  background-color: green;
-  border-radius: 8px;
-  font-family: 'Lobster', cursive;
-  border: none;
-  cursor: pointer;
-
-}
-#searchMovieBtn:hover {
-background-color: #50c878 ;
-}
-
-#searchMovieBtn:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-::placeholder{
-  color: #40404F;
-  opacity: 50%;
-
-}
-
-#userMovieInput{
-  font-family: 'Saira Stencil One', cursive;
-  font-size: 25px;
-  height: 50px;
-}
-
-.titles img{
-  background-color: #8abad3ff;
-}
-.slider .slides li img {
-  height: 100%;
-  width: 100%;
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.footer-copyright{
-  text-align: center;
-}
-#copyright{
-  font-size: 20px;
-}
-/*
+    #userMovieInput{
+      font-family: 'Saira Stencil One', cursive;
+      font-size: 25px;
+      height: 50px;
+    }
+/*Services & Logos*/
+    .titles img{
+      background-color: #8abad3ff;
+    }
+    .slider .slides li img {
+      height: 100%;
+      width: 100%;
+      background-size: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+/*Footer*/
+    .footer-copyright{
+      text-align: center;
+    }
+    #copyright{
+      font-size: 20px;
+    }
