@@ -24,15 +24,15 @@ header{
 }
 
 #sP{
-
-  text-align: center;
   display: inline;
+}
+#shows{
+  display: inline;
+  text-align:center;
 }
 #sBtm{
  font-size: 30px;
 }
-
-
 
 .save{
   font-size: 30px;  
@@ -46,6 +46,7 @@ p{
 }
 #about{
   padding-right: 30px;
+
 }
 .titles{
   text-align: center;
@@ -63,9 +64,16 @@ label{
   float: left;
   font-family: 'Lobster', cursive;
 }
+
+#have{
+ display: inline;
+}
+#want{
+ display: inline;
+}
 #searchMovieBtn{
   font-size: 150%;
-  width: 10%;
+  width: 40%;
   background-color: green;
   border-radius: 8px;
   font-family: 'Lobster', cursive;
