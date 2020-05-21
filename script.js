@@ -69,7 +69,7 @@ $(document).ready(function () {
 
 
                 var card1 = $("<card>");
-                card1.addclass()
+
 
 
                 $("#resStream").append(`<div>${streamApp}</div>`);
