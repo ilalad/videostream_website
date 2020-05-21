@@ -6,8 +6,7 @@
       <title>Stream On</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@500&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -19,26 +18,40 @@
     <body>
       <nav><h1 class="stron" id="sNav">StreamOn</h1></nav>
       <header>
-        <h2 class="about">About : </h2>
-          <p><p class="stron" id="sP">StreamOn <p>shows you where a movie is available to stream.</p>
+        <div class="container">
           <br>
-          <p id="have">Have a movie in mind? Type it into the search bar and hit Search!</p>
           <br>
-          <p id="want">Want to know what’s popular? Check out our Popular section!</p>
-          <h2 class="save">Save time, <p class="stron" id="sBtm">StreamOn!</p> </h2>
+          <h2 class="section" id="about">About :</h2>
+          <br>
+          <br>
+            <p class="stron" id="sP">StreamOn </p><p>shows you where a movie is available to stream.</p>
+            <br>
+            <p id="have">Have a movie in mind? Type it into the search bar and hit Search!</p>
+            <br>
+            <p id="want">Want to know what’s popular? Check out our Popular section!</p>
+            <h2 class="save">Save time, <p class="stron" id="sBtm">StreamOn!</p> </h2>
+        </div>
           <!--StreamOn shows you where a movie is available to stream. Have a movie in mind? Type it into the search bar and hit Search! Want to know what’s popular? Check out our Popular section! Save time, StreamOn!-->
       </header>
 <!--Popular-->  
       <div class="titles">
-          <p>Popular</p>
+        <div class="container">
+          <p class="section">Popular</p>
           <br>
-          <div class = "container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
             <div class="slider">  
                 <ul class="slides">  
-                  <li><img src="http://lorempixel.com/580/250/nature/1"></li>  
-                  <li><img src="http://lorempixel.com/580/250/nature/2"></li>  
-                  <li><img src="http://lorempixel.com/580/250/nature/3"></li>
-                  <li><img src="http://lorempixel.com/580/250/nature/4"></li>
+                  <li><img src="http://lorempixel.com/580/250/nature/1" alt="placeholder1"></li>  
+                  <li><img src="http://lorempixel.com/580/250/nature/2" alt="placeholder2"></li>  
+                  <li><img src="http://lorempixel.com/580/250/nature/3" alt="placeholder3"></li>
+                  <li><img src="http://lorempixel.com/580/250/nature/4" alt="placeholder4"></li>
                 </ul>
               </div>
           </div>
@@ -46,23 +59,39 @@
         <br>
 <!--Search-->
         <div class="titles">
-          <p>Search</p>
           <br>
-         </div> 
-         <div class = "container">
+         <div class="container">
             <form>
                <label for="mname">Search Bar :</label>
                <br>
-               <input type="text" id="userMovieInput" name="mname">
                <br>
+               <br>
+               <input type="text" id="userMovieInput" name="mname" placeholder="Search Movies Here!">
+               <br>
+               <div class = "card-panel">
+                <h5>Primary Buttons</h5>
+                <button class = "btn waves-effect waves-light red" type = "submit">Send
+                   <i class = "material-icons right">send</i></button>
+                <button class = "btn waves-effect waves-light red disabled" type = "submit" >Cancel
+                   <i class = "material-icons right">cancel</i></button>
+             </div>
                <button id="searchMovieBtn" type="button">Search</button>
                <br>
             </form>
          </div>
+         <br>
+         <br>
 <!--Services/Logos-->
         <div class="titles">
-          <p>Services</p>
-          <div class = "container">
+          <div class="container">
+            <p class="section">Services</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <div class="slider">  
                 <ul class="slides">  
                   <li><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Hulu_logo_%282007%29.svg" alt="Hulu logo"></li>  
@@ -77,7 +106,7 @@
       <br>
       <div class = "footer-copyright">  
         <div class = "container">  
-           © Copyright 2020  
+           <p id="copyright">© Copyright 2020<p>
         </div>  
      </div>   
      <br>        
