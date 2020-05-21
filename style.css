@@ -1,6 +1,6 @@
 body{
   color: #40404F;
-  background-color: #8abad3ff
+  background-color: #8abad3ff;
 }
 
 nav{
@@ -50,11 +50,18 @@ p{
 
 label{
   color: #40404F;
+  font-size: 30px;
 }
 
 .titles img{
-  height: 10%;
-  width: 30%;
+  background-color: #8abad3ff;
+}
+.slider .slides li img {
+  height: 100%;
+  width: 100%;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .footer-copyright{
   text-align: center;
