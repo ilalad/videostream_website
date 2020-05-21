@@ -67,6 +67,23 @@ $(document).ready(function () {
                 $("#resStream").append(`<div>${streamApp}</div>`);
                 $("#resStream").append(iconEl);
 
+
+                var card1 = $("<card>");
+                card1.addclass()
+
+
+                $("#resStream").append(`<div>${streamApp}</div>`);
+                $("#resStream").append(iconEl);
+
+
+
+
+
+                ///sytax
+
+
+
+
             }
 
         });
