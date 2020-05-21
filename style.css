@@ -11,7 +11,6 @@ nav{
 
 header{
     font-family: 'Be Vietnam', sans-serif;   
-
     text-align: center;
 }
 
@@ -20,7 +19,7 @@ header{
 }
 
 #sP{
-  float: center;
+
   text-align: center;
   display: inline;
 }
@@ -30,7 +29,7 @@ header{
 
 .about{
   font-size: 30px;
-clear: both;
+
 }
 
 .save{
@@ -49,6 +48,9 @@ p{
   font-family: 'Puritan', sans-serif;
 }
 
+label{
+  color: #40404F;
+}
 
 .titles img{
   height: 10%;

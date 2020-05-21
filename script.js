@@ -1,4 +1,14 @@
-var myIndex = 0;
+$(document).ready(function() {  
+  $(".slider").slider({ full_width: true });  
+});  
+
+
+
+
+
+
+
+/*var myIndex = 0;
 carousel();
 
 function carousel() {
