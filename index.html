@@ -1,13 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/startup-materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stream On</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
+</head>
+
+<body>
+
+
+    <article class="">
+        <div class="container">
+            <form id="city-form">
+                <label for="movieInput">
+                    <h2>Search for a Movie:</h2>
+                </label>
+                <input class="form-control col-10" type="text" id="userMovieInput"><button
+                    class="btn btn-primary fas fa-search" id="searchMovieBtn" type="submit" value="Movie Search">
+                </button>
+                <!-- Normal Transitions -->
+                <div class="fade-in-out">
+                    <p class="caption">This is a cool feature about your product! It really separates you from the
+                        crowd.</p>
+
+                    <a href="#!" class="btn-large dark">Show me my streaming options</a>
+                </div>
+            </form>
+
+        </div>
+        <article class="" id="movie-list">
+
+
+
+
+
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s6 m3">
+                            <img class="materialize-logo" src="../images/materialize-teal.png" alt="">
+                            <p>Made with love by Materialize.</p>
+                        </div>
+                        <div class="col s6 m3">
+                            <h5>About</h5>
+                            <ul>
+                                <li><a href="#!">Blog</a></li>
+                                <li><a href="#!">Pricing</a></li>
+                                <li><a href="#!">Docs</a></li>
+                            </ul>
+                        </div>
+                        <div class="col s6 m3">
+                            <h5>Connect</h5>
+                            <ul>
+                                <li><a href="#!">Community</a></li>
+                                <li><a href="#!">Subscribe</a></li>
+                                <li><a href="#!">Email</a></li>
+                            </ul>
+                        </div>
+                        <div class="col s6 m3">
+                            <h5>Contact</h5>
+                            <ul>
+                                <li><a href="#!">Twitter</a></li>
+                                <li><a href="#!">Facebook</a></li>
+                                <li><a href="#!">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <!--JavaScript at end of body for optimized loading-->
+            <script type="text/javascript" src="script.js"></script>
+
+</body>
+
 </html>
