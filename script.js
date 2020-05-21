@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function () {
   //create a btn click event that fires when the searchMovie btn is clicked
   //once btn click works the btn click should fire the ajax call
@@ -28,3 +29,24 @@ $(document).ready(function () {
     });
   });
 });
+=======
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=Spiderman&country=us",
+    "method": "GET",
+    "headers": {
+        "x-rapidapi-host": "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
+        "x-rapidapi-key": "230f5fd612msh4e36283b5d68e1bp179416jsnd53a23333929"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+
+
+
+
+
+>>>>>>> 075201495bb81353253c561d3a2b19810488f59e
