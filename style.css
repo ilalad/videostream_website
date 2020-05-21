@@ -1,4 +1,60 @@
-body {
-    background-color: rgb(43, 144, 226); */
-   
-  }
+body{
+  color: #40404F;
+  background-color: #8abad3ff
+}
+
+nav{
+  text-align: center;
+  font-size: 20px;
+  background-color:  #40404F;
+}
+
+header{
+    font-family: 'Be Vietnam', sans-serif;   
+
+    text-align: center;
+}
+
+.stron {
+  font-family: 'Saira Stencil One', cursive;
+}
+
+#sP{
+  float: center;
+  text-align: center;
+  display: inline;
+}
+#sBtm{
+ font-size: 30px;
+}
+
+.about{
+  font-size: 30px;
+clear: both;
+}
+
+.save{
+  font-size: 30px;  
+}
+
+
+p{
+  font-size: 20px;
+  display: inline;
+
+}
+
+.titles{
+  text-align: center;
+  font-family: 'Puritan', sans-serif;
+}
+
+
+.titles img{
+  height: 10%;
+  width: 30%;
+}
+.footer-copyright{
+  text-align: center;
+}
+/*
