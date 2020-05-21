@@ -1,8 +1,115 @@
 body {
-<<<<<<< HEAD
-  background-color: rgb(43, 144, 226);
+  color: #40404f;
+  background-color: #8abad3ff;
 }
-=======
-  
-  }
->>>>>>> 075201495bb81353253c561d3a2b19810488f59e
+
+nav {
+  text-align: center;
+  height: 100px;
+  background-color: #40404f;
+}
+#sNav {
+  font-size: 500%;
+}
+
+header {
+  font-family: "Be Vietnam", sans-serif;
+  text-align: center;
+}
+
+.stron {
+  font-family: "Saira Stencil One", cursive;
+  margin-top: 0%;
+}
+
+#sP {
+  display: inline;
+}
+#shows {
+  display: inline;
+  text-align: center;
+}
+#sBtm {
+  font-size: 30px;
+}
+
+.save {
+  font-size: 30px;
+}
+
+p {
+  font-size: 30px;
+  display: inline;
+}
+#about {
+  padding-right: 30px;
+  text-decoration: underline;
+}
+.titles {
+  text-align: center;
+  font-family: "Puritan", sans-serif;
+}
+.section {
+  font-size: 50px;
+  float: left;
+  font-family: "Lobster", cursive;
+  text-decoration: underline;
+}
+label {
+  color: #40404f;
+  font-size: 50px;
+  float: left;
+  font-family: "Lobster", cursive;
+  text-decoration: underline;
+}
+
+#have {
+  display: inline;
+}
+#want {
+  display: inline;
+}
+#searchMovieBtn {
+  font-size: 150%;
+  width: 40%;
+  background-color: green;
+  border-radius: 8px;
+  font-family: "Lobster", cursive;
+  border: none;
+  cursor: pointer;
+}
+#searchMovieBtn:hover {
+  background-color: #50c878;
+}
+
+#searchMovieBtn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+::placeholder {
+  color: #40404f;
+  opacity: 50%;
+}
+
+#userMovieInput {
+  font-family: "Saira Stencil One", cursive;
+  font-size: 20px;
+}
+
+.titles img {
+  background-color: #8abad3ff;
+}
+.slider .slides li img {
+  height: 100%;
+  width: 100%;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer-copyright {
+  text-align: center;
+}
+#copyright {
+  font-size: 20px;
+}
