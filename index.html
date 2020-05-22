@@ -1,89 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stream On</title>
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="css/startup-materialize.min.css">
-
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body>
-
-
-    <article class="">
-        <div class="container">
-            <form id="city-form">
-                <label for="movieInput">
-                    <h2>Search for a Movie:</h2>
-                </label>
-                <input class="form-control col-10" type="text" id="userMovieInput"><button
-                    class="btn btn-primary fas fa-search" id="searchMovieBtn" type="submit" value="Movie Search">
-                </button>
-                <!-- Normal Transitions -->
-                <div class="fade-in-out">
-                    <p class="caption">This is a cool feature about your product! It really separates you from the
-                        crowd.</p>
-
-                    <a href="#!" class="btn-large dark">Show me my streaming options</a>
-                </div>
-            </form>
-
+  </head>
+  <body>
+    <nav><h1 class="stron" id="sNav">StreamOn</h1></nav>
+    <header>
+      <!--About section-->
+      <div class="container">
+        <br />
+        <br />
+        <h2 class="section" id="about">About</h2>
+        <br />
+        <br />
+        <p class="stron" id="sP">StreamOn</p>
+    
+        <p id="shows">shows you where a movie is available to stream.</p>
+        <br />
+        <p id="have">
+          Have a movie in mind? Type it into the search bar and hit Search!
+        </p>
+        <br />
+        <p id="want">
+          Want to know what’s popular? Check out our Popular section!
+        </p>
+        <br />
+        <br />
+        <p class="save">Save time,</p>
+        <p class="stron" id="sBtn">StreamOn!</p>
+      </div>
+    </header>
+    <!--Popular-->
+    <div class="titles">
+      <div class="container">
+        <p class="section">Popular</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!--Images-->
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img
+                src="http://lorempixel.com/580/250/nature/1"
+                alt="placeholder1"
+              />
+            </li>
+            <li>
+              <img
+                src="http://lorempixel.com/580/250/nature/2"
+                alt="placeholder2"
+              />
+            </li>
+            <li>
+              <img
+                src="http://lorempixel.com/580/250/nature/3"
+                alt="placeholder3"
+              />
+            </li>
+            <li>
+              <img
+                src="http://lorempixel.com/580/250/nature/4"
+                alt="placeholder4"
+              />
+            </li>
+          </ul>
         </div>
-        <article class="" id="movie-list">
-
-
-            <footer class="page-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s6 m3">
-                            <img class="materialize-logo" src="../images/materialize-teal.png" alt="">
-                            <p>Made with love by Materialize.</p>
-                        </div>
-                        <div class="col s6 m3">
-                            <h5>About</h5>
-                            <ul>
-                                <li><a href="#!">Blog</a></li>
-                                <li><a href="#!">Pricing</a></li>
-                                <li><a href="#!">Docs</a></li>
-                            </ul>
-                        </div>
-                        <div class="col s6 m3">
-                            <h5>Connect</h5>
-                            <ul>
-                                <li><a href="#!">Community</a></li>
-                                <li><a href="#!">Subscribe</a></li>
-                                <li><a href="#!">Email</a></li>
-                            </ul>
-                        </div>
-                        <div class="col s6 m3">
-                            <h5>Contact</h5>
-                            <ul>
-                                <li><a href="#!">Twitter</a></li>
-                                <li><a href="#!">Facebook</a></li>
-                                <li><a href="#!">Github</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                crossorigin="anonymous"></script>
-            <!--JavaScript at end of body for optimized loading-->
-            <script type="text/javascript" src="script.js"></script>
-
-</body>
+      </div>
+    </div>
+    <br />
+    <!--Search-->
+    <div class="titles">
+      <br />
+      <div class="container">
+        <form>
+          <!--Search Bar title-->
+          <label for="mname">Search Bar</label>
+          <br />
+          <br />
+          <br />
+          <br />
+          <!--Search Bar-->
+          <input
+            type="text"
+            id="userMovieInput"
+            name="mname"
+            placeholder="Search Movies Here!"
+          />
+          <br />
+          <!--Search Btn-->
+          <button id="searchMovieBtn" type="button">Search</button>
+          <br />
+        </form>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!--Services/Logos-->
+    <div class="titles">
+      <div class="container">
+        <p class="section">Services</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!--Images-->
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/26/Hulu_logo_%282007%29.svg"
+                alt="Hulu logo"
+              />
+            </li>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+                alt="Netflix logo"
+              />
+            </li>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amazon_Prime_Video_logo.svg/1200px-Amazon_Prime_Video_logo.svg.png"
+                alt="Amazon Prime logo"
+              />
+            </li>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg"
+                alt="Disney Plus logo"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--Footer-->
+    <div class="footer-copyright">
+      <div class="container">
+        <p id="copyright">© Copyright 2020</p>
+        <p></p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

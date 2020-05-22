@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $(".slider").slider({ full_width: true });
   //create a btn click event that fires when the searchMovie btn is clicked
   //once btn click works the btn click should fire the ajax call
   $("#searchMovieBtn").on("click", function (event) {
@@ -45,22 +46,3 @@ var settings = {
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
-
-$(document).ready(function () {
-  $(".slider").slider({ full_width: true });
-});
-
-/*var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 5000); // Change image every 5 seconds
-}*/
