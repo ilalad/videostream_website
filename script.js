@@ -8,7 +8,8 @@ $(document).ready(function () {
     $("#searchMovieBtn").on("click", function (event) {
         event.preventDefault();
         console.log("I've been clicked");
-        $(".needHide").css("display", "none")
+        $("#resStream").empty();
+        $("#youVid").empty();
         //search movie should equal to the value entered by the user from the input field with an id of userMovieInput
         var searchMovie = $("#userMovieInput").val().trim();
         console.log(searchMovie);
@@ -26,11 +27,12 @@ $(document).ready(function () {
         }).then(function (response) {
             console.log(response.items[0].id.videoId);
             var youtubeVideoId = response.items[0].id.videoId;
-            var trailerUrl = "https://www.youtube.com/watch?v=" + youtubeVideoId;
+            var trailerUrl = "https://www.youtube.com/embed/" + youtubeVideoId;
 
             console.log(trailerUrl);
 
-            $("#youVid").append(`<video controls width="560" height="315"> <source type="video/mp4" src="${trailerUrl}"> </video>`);
+            $("#youVid").append(`<iframe width="900" height="400" src="${trailerUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+
 
 
         });
@@ -55,32 +57,38 @@ $(document).ready(function () {
                 var streamApp = response.results[0].locations[i].display_name;
                 console.log(streamApp);
 
-                var streamIcon = response.results[0].locations[i].icon
+                var streamIcon = response.results[0].locations[i].icon;
                 console.log(streamIcon);
 
-                var iconEl = $("<img>")
-
-                iconEl.attr("src", streamIcon)
-
-                iconEl.attr("alt", streamApp)
-
-                $("#resStream").append(`<div>${streamApp}</div>`);
-                $("#resStream").append(iconEl);
+                var streamLink = response.results[0].locations[i].url;
 
 
-                var card1 = $("<card>");
+                //var iconEl = $("<img>")
+                //iconEl.attr("src", streamIcon)
+                //iconEl.attr("alt", streamApp)
+                //$("#resStream").append(iconEl);
+
+                //$("#resStream").append(`<div>${streamApp}</div>`);
+
+                var row = $("<div>").attr("class", "row");
+
+
+                var iconEl = $("<img>").attr("class", "col s2");
+                iconEl.attr("src", streamIcon);
+                iconEl.attr("alt", streamApp);
 
 
 
-                $("#resStream").append(`<div>${streamApp}</div>`);
-                $("#resStream").append(iconEl);
+                var linkEl = $("<a>").attr("class", "col s2");
+                linkEl.attr("href", streamLink);
 
 
 
+                $("#resStream").append(row, iconEl, linkEl);
+
+                //;row.append(iconEl, linkEl);
 
                 ///sytax
-
-
 
 
             }
