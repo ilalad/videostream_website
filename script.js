@@ -66,11 +66,14 @@ $(document).ready(function () {
                 var streamLink = response.results[0].locations[i].url;
 
 
-                var d1 = $("<div>").attr("class", "col");
-                var iconEl = $("<img>").attr("src", streamIcon).attr("alt", streamApp).attr("id", "iconEL");
+                var d1 = $("<div>").attr("class", "col s6");
+                var iconEl = $("<img>")
+                iconEl.attr("src", streamIcon)
+                iconEl.attr("alt", streamApp)
+                iconEl.attr("id", "iconEL");
 
 
-                var linkEl = $("<a>").attr("href", streamLink).text("Click to Access App");
+                var linkEl = $("<a>").attr("href", streamLink).text("Click to Access App Streamer");
 
 
                 row.append(d1);
