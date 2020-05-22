@@ -8,7 +8,8 @@ $(document).ready(function () {
     $("#searchMovieBtn").on("click", function (event) {
         event.preventDefault();
         console.log("I've been clicked");
-        $(".needHide").css("display", "none")
+        $("#resStream").empty();
+        $("#youVid").empty();
         //search movie should equal to the value entered by the user from the input field with an id of userMovieInput
         var searchMovie = $("#userMovieInput").val().trim();
         console.log(searchMovie);
@@ -16,7 +17,7 @@ $(document).ready(function () {
         var queryUrl =
             "https://www.googleapis.com/youtube/v3/search?type=video&q=" +
             searchMovie +
-            " official trailer&key=AIzaSyBmlD8yeHMFUIHSMRsfrVEevHRq6yR-ZBw";
+            " official trailer&key=AIzaSyB_pQRVeuodW7AAbb4hN2COspiJikOuXnQ";
         console.log(queryUrl);
         // Creating an AJAX call for the specific movie's trailer when serached
 
@@ -26,11 +27,12 @@ $(document).ready(function () {
         }).then(function (response) {
             console.log(response.items[0].id.videoId);
             var youtubeVideoId = response.items[0].id.videoId;
-            var trailerUrl = "https://www.youtube.com/watch?v=" + youtubeVideoId;
+            var trailerUrl = "https://www.youtube.com/embed/" + youtubeVideoId;
 
             console.log(trailerUrl);
 
-            $("#youVid").append(`<video controls width="560" height="315"> <source type="video/mp4" src="${trailerUrl}"> </video>`);
+            $("#youVid").append(`<iframe width="900" height="400" src="${trailerUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+
 
 
         });
@@ -49,39 +51,44 @@ $(document).ready(function () {
 
         $.ajax(settings).done(function (response) {
             console.log(response);
+            var row = $("<div>").attr("class", "row");
+            $("#resStream").append(row);
+
 
             for (var i = 0; i < response.results[0].locations.length; i++) {
 
                 var streamApp = response.results[0].locations[i].display_name;
                 console.log(streamApp);
 
-                var streamIcon = response.results[0].locations[i].icon
+                var streamIcon = response.results[0].locations[i].icon;
                 console.log(streamIcon);
 
+                var streamLink = response.results[0].locations[i].url;
+
+
+                var d1 = $("<div>").attr("class", "col s6");
                 var iconEl = $("<img>")
-
                 iconEl.attr("src", streamIcon)
-
-                iconEl.attr("alt", streamApp)
-
-                $("#resStream").append(`<div>${streamApp}</div>`);
-                $("#resStream").append(iconEl);
+                iconEl.attr("alt", "Click here to go to " + streamApp);
+                iconEl.attr("id", "iconEL");
 
 
-                var card1 = $("<card>");
+                var linkEl = $("<a>").attr("href", streamLink).attr("target", "_blank").append(iconEl);
 
-
-
-                $("#resStream").append(`<div>${streamApp}</div>`);
-                $("#resStream").append(iconEl);
+                var iconBtn = $("<button>").attr("id", "buttonStyle").append(linkEl);
 
 
 
+                row.append(d1);
+                d1.append(iconBtn);
 
-                ///sytax
 
 
 
+
+                //;row.append(iconEl, linkEl);
+
+                ///sytax;
 
             }
 
