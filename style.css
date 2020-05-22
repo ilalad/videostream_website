@@ -2,6 +2,9 @@
 body {
   color: #40404f;
   background-color: #8abad3ff;
+  background-image: url("");
+  opacity: 1;
+  background-size: cover;
 }
 p {
   font-size: 30px;
