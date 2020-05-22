@@ -2,8 +2,8 @@
 /*Global classes*/
 body{
     color: #40404F;
-    background-image: url(https://lh3.googleusercontent.com/WxXGjXBoA0AlArvJGQ2JomQuc-xYCjKv_fU6Lj_4xZjRcUtz5J6VG7kQ_swc78yCGQKE=s152);
-    background-size: cover;
+    background-color:  #8abad3ff;
+    
   }
   /*Nav Bar*/
   nav{
@@ -58,7 +58,7 @@ body{
   label{
     color: #40404F;
     font-size: 50px;
-    float: left;
+    text-align: center;
     font-family: 'Lobster', cursive;
     text-decoration: underline;
   }
@@ -90,6 +90,7 @@ body{
     opacity: 50%;
   }
   #userMovieInput{
+    text-align: center;
     font-family: 'Saira Stencil One', cursive;
     font-size: 25px;
     height: 50px;

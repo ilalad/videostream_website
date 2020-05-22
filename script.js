@@ -51,6 +51,9 @@ $(document).ready(function () {
 
         $.ajax(settings).done(function (response) {
             console.log(response);
+            var row = $("<div>").attr("class", "row");
+            $("#resStream").append(row);
+
 
             for (var i = 0; i < response.results[0].locations.length; i++) {
 
@@ -63,33 +66,20 @@ $(document).ready(function () {
                 var streamLink = response.results[0].locations[i].url;
 
 
-                //var iconEl = $("<img>")
-                //iconEl.attr("src", streamIcon)
-                //iconEl.attr("alt", streamApp)
-                //$("#resStream").append(iconEl);
-
-                //$("#resStream").append(`<div>${streamApp}</div>`);
-
-                var row = $("<div>").attr("class", "row");
+                var d1 = $("<div>").attr("class", "col");
+                var iconEl = $("<img>").attr("src", streamIcon).attr("alt", streamApp).attr("id", "iconEL");
 
 
-                var iconEl = $("<img>").attr("class", "col s2");
-                iconEl.attr("src", streamIcon);
-                iconEl.attr("alt", streamApp);
+                var linkEl = $("<a>").attr("href", streamLink).text("Click to Access App");
 
 
+                row.append(d1);
+                d1.append(iconEl, linkEl);
 
-                var linkEl = $("<a>").attr("class", "col s2");
-                linkEl.attr("href", streamLink);
-
-
-
-                $("#resStream").append(row, iconEl, linkEl);
 
                 //;row.append(iconEl, linkEl);
 
-                ///sytax
-
+                ///sytax;
 
             }
 
