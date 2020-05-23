@@ -12,7 +12,8 @@ body{
   nav{
     text-align: center;
     height: 100px;
-    background-color:  #40404F;
+    background-color:  rgba(64, 64, 79, 0.521);
+    
   }
   #sNav{
   font-size: 500%;
@@ -73,7 +74,7 @@ body{
   }
   #searchMovieBtn{
     font-size: 200%;
-    width: 40%;
+    width: 50%;
     height: 50px;
     background-color:rgb(206, 117, 15);
     border-radius: 8px;
@@ -86,11 +87,11 @@ body{
   background-color: rgb(165, 116, 61);
   }
   #searchMovieBtn:active {
-    box-shadow: 0 5px whitesmoke;
+    box-shadow: 0 5px rgb(207, 183, 105);
     transform: translateY(4px);
   }
   ::placeholder{
-    color:;
+    color:rgb(230, 229, 201);
     opacity: 50%;
   }
   #userMovieInput{
@@ -98,21 +99,25 @@ body{
     font-family: 'Saira Stencil One', cursive;
     font-size: 25px;
     height: 50px;
+    color: rgb(253, 252, 250);
+    background-color: rgba(216, 204, 173, 0.178);
+
+    
   }
   #titles1 {
-    background-color: #8abad3ff;
+  ;
  
   }
 
   #titles2 {
-    background-color: #8abad3ff;
+   ;
  
   }
 
 
   #titles3 {
     
-    background-color: #8abad3ff;
+  ;
  
   }
 
@@ -139,19 +144,32 @@ body{
   
   
 a {
-  color:whitesmoke;
+  width: 200px;
+  color:rgb(165, 34, 34);
+  float: ;
   
 }
 
 
 #buttonStyle {
- margin-top: 20px;
- margin-bottom: 20;
- padding: 20px;
- width: 300px;
-  background-color: bisque;
-  
+ width: 100%;
+ height: 100px;
+ float: inline-end;
+background-color: #a58565a1;
+
 }
+
+#buttonStyle:active {
+
+background-color: darkgreen;
+}
+
+#buttonStyle:hover{
+
+  background-color: rgb(216, 42, 42);
+}
+
+
   
 
 #popSec {
@@ -162,4 +180,31 @@ a {
 #streamApp {
 
   text-align: center;
+}
+
+#btnStyle {
+  color: aqua;
+float: left;
+  width: 100px;
+  height: 50px;
+
+
+
+}
+
+#iconEl {float: ;
+
+
+
+
+}
+
+.row {
+
+
+}
+
+#player{
+
+  float: center;
 }
