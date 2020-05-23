@@ -66,8 +66,8 @@ $(document).ready(function () {
                 var streamLink = response.results[0].locations[i].url;
 
 
-                var d1 = $("<div>").attr("class", "col s6");
-                var iconEl = $("<img>")
+                var d1 = $("<div>").attr("class", "col s3");
+                var iconEl = $("<img>").attr("id", "btnStyle")
                 iconEl.attr("src", streamIcon)
                 iconEl.attr("alt", "Click here to go to " + streamApp);
                 iconEl.attr("id", "iconEL");
@@ -90,7 +90,7 @@ $(document).ready(function () {
 
                 ///sytax;
 
-            }
+            };
 
         });
 
