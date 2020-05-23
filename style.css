@@ -1,7 +1,9 @@
 /*Global classes*/
 /*Global classes*/
 body{
-    color:  whitesmoke;
+    color:  white;
+    scrollbar-3dlight-color: rgb(169, 172, 32);
+
     background-image: url(shutterstock_740398456.jpg);
     background-position: center;
   
@@ -13,6 +15,7 @@ body{
     text-align: center;
     height: 100px;
     background-color:  rgba(64, 64, 79, 0.521);
+    
     
   }
   #sNav{
@@ -73,13 +76,12 @@ body{
    display: inline;
   }
   #searchMovieBtn{
-    font-size: 200%;
-    width: 50%;
-    height: 50px;
+    font-size: 150%;
+    width: 25%;
+    height: 47px;
     background-color:rgb(206, 117, 15);
     border-radius: 8px;
-    color: rgb(59, 49, 49);
-    font-family: 'Lobster', cursive;
+    color:whitesmoke;
     border: none;
     cursor: pointer;
   }
@@ -105,6 +107,7 @@ body{
     
   }
   #titles1 {
+    background: transparent;
   ;
  
   }
@@ -145,13 +148,13 @@ body{
   
 a {
   width: 200px;
-  color:rgb(165, 34, 34);
-  float: ;
+  color:rgb(156, 183, 199);
+  
   
 }
 
 
-#buttonStyle {
+buttonStyle {
  width: 100%;
  height: 100px;
  float: inline-end;
@@ -159,18 +162,7 @@ background-color: #a58565a1;
 
 }
 
-#buttonStyle:active {
 
-background-color: darkgreen;
-}
-
-#buttonStyle:hover{
-
-  background-color: rgb(216, 42, 42);
-}
-
-
-  
 
 #popSec {
   background: transparent;
@@ -182,22 +174,31 @@ background-color: darkgreen;
   text-align: center;
 }
 
-#btnStyle {
-  color: aqua;
-float: left;
-  width: 100px;
-  height: 50px;
-
-
-
-}
-
-#iconEl {float: ;
-
-
-
+#iconStyle {
+background-color:rgba(245, 222, 179, 0.445);
+b
+height:10%;
+width: 75%;
+padding: 10%;
+border: rgb(231, 209, 204);
+border-radius: initial ;
+border-color: whitesmoke ;
+border-radius: 20px;
+border-width: 20px;
 
 }
+
+#iconStyle:active {
+
+  background-color: darkgreen;
+  }
+  
+  #iconStyle:hover{
+  width: 75%;
+  background-color:rgb(206, 117, 15);
+
+
+
 
 .row {
 
