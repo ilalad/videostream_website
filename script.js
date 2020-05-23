@@ -17,7 +17,7 @@ $(document).ready(function () {
         var queryUrl =
             "https://www.googleapis.com/youtube/v3/search?type=video&q=" +
             searchMovie +
-            " official trailer&key=AIzaSyB_pQRVeuodW7AAbb4hN2COspiJikOuXnQ";
+            " official trailer&key=AIzaSyBmlD8yeHMFUIHSMRsfrVEevHRq6yR-ZBw";
         console.log(queryUrl);
         // Creating an AJAX call for the specific movie's trailer when serached
 
@@ -67,23 +67,20 @@ $(document).ready(function () {
 
 
                 var d1 = $("<div>").attr("class", "col s3");
-                var iconEl = $("<img>").attr("id", "btnStyle")
-                iconEl.attr("src", streamIcon)
+                var iconEl = $("<img>");
+                iconEl.attr("src", streamIcon);
                 iconEl.attr("alt", "Click here to go to " + streamApp);
-                iconEl.attr("id", "iconEL");
+                iconEl.attr("id", "iconStyle");
+
 
 
                 var linkEl = $("<a>").attr("href", streamLink).attr("target", "_blank").append(iconEl);
 
-                var iconBtn = $("<button>").attr("id", "buttonStyle").append(linkEl);
-
+                //var iconBtn = $("<button>").attr("id", "buttonStyle").append(linkEl);
 
 
                 row.append(d1);
-                d1.append(iconBtn);
-
-
-
+                d1.append(linkEl);
 
 
                 //;row.append(iconEl, linkEl);
