@@ -11,3 +11,8 @@ https://tuhituhi18.github.io/project1_movie/ version1 5.22.2020
 Future dev ideas:
 Add section with popular movies and series
 Add pages with movies and series sorted by Genre, that user can choose from.
+Add a sign up page to track users
+
+Improvements and Enhancements:
+Trailer video's content to be more responsive
+Button icons improvement to reflect the actual
