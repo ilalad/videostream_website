@@ -7,7 +7,6 @@ body{
     background-position: center;
     background-blend-mode: screen;
     background-size: 80% ;
-    background-repeat:;
   }
   /*Nav Bar*/
   nav{
@@ -57,7 +56,7 @@ body{
   }
   .section{
   font-size: 50px;
-  float: left;
+  float: center;
   font-family: 'Lobster', cursive;
   text-decoration: underline;
   }
@@ -102,7 +101,11 @@ body{
     height: 50px;
   }
   .titles img{
-    background-color: #b32134;
+    background-color: transparent;
+  }
+  
+  #ul{
+    background: transparent;
   }
   .slider .slides li img {
     height: 100%;
@@ -110,7 +113,8 @@ body{
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #b32134;
+    background-color:transparent;
+
   }
 .slider{
   background-color: transparent;
@@ -123,7 +127,7 @@ body{
   }
   
   #results {
-    background-color: #b32134;
+    background-color:transparent;
   }
   
   
