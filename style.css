@@ -76,8 +76,8 @@ body{
    display: inline;
   }
   #searchMovieBtn{
-    font-size: 150%;
-    width: 25%;
+    font-size: 30px;
+    width: 200px;
     height: 47px;
     background-color:rgb(206, 117, 15);
     border-radius: 8px;
@@ -176,7 +176,6 @@ background-color: #a58565a1;
 
 #iconStyle {
 background-color:rgba(245, 222, 179, 0.445);
-b
 height:10%;
 width: 75%;
 padding: 10%;
