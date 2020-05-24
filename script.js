@@ -16,7 +16,7 @@ $(document).ready(function () {
     var queryUrl =
       "https://www.googleapis.com/youtube/v3/search?type=video&q=" +
       searchMovie +
-      " official trailer&key=AIzaSyB_pQRVeuodW7AAbb4hN2COspiJikOuXnQ";
+      " official trailer&key=AIzaSyBmlD8yeHMFUIHSMRsfrVEevHRq6yR-ZBw";
     console.log(queryUrl);
     // Creating an AJAX call for the specific movie's trailer when serached
 
@@ -62,21 +62,21 @@ $(document).ready(function () {
 
         var streamLink = response.results[0].locations[i].url;
 
-        var d1 = $("<div>").attr("class", "col s6");
+        var d1 = $("<div>").attr("class", "col s3");
         var iconEl = $("<img>");
         iconEl.attr("src", streamIcon);
         iconEl.attr("alt", "Click here to go to " + streamApp);
-        iconEl.attr("id", "iconEL");
+        iconEl.attr("id", "iconStyle");
 
         var linkEl = $("<a>")
           .attr("href", streamLink)
           .attr("target", "_blank")
           .append(iconEl);
 
-        var iconBtn = $("<button>").attr("id", "buttonStyle").append(linkEl);
+        //var iconBtn = $("<button>").attr("id", "buttonStyle").append(linkEl);
 
         row.append(d1);
-        d1.append(iconBtn);
+        d1.append(linkEl);
 
         //;row.append(iconEl, linkEl);
 
@@ -115,19 +115,68 @@ $(document).ready(function () {
       var d1 = $("<div>").attr("class", "col s6");
       var iconEl = $("<img>");
       iconEl.attr("src", streamIcon);
-      iconEl.attr("alt", streamApp);
+      iconEl.attr("alt", "Click here to go to " + streamApp);
       iconEl.attr("id", "iconEL");
 
       var linkEl = $("<a>")
         .attr("href", streamLink)
-        .text("Click to Access App Streamer");
+        .attr("target", "_blank")
+        .append(iconEl);
+
+      var iconBtn = $("<button>").attr("id", "buttonStyle").append(linkEl);
 
       row.append(d1);
-      d1.append(iconEl, linkEl);
+      d1.append(iconBtn);
 
       //;row.append(iconEl, linkEl);
 
       ///sytax;
     }
   });
+});
+
+//Rapid Api Script for Streamer
+var settings = {
+  async: true,
+  crossDomain: true,
+  url: `https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=${searchMovie}&country=us`,
+  method: "GET",
+  headers: {
+    "x-rapidapi-host":
+      "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
+    "x-rapidapi-key": "230f5fd612msh4e36283b5d68e1bp179416jsnd53a23333929",
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  var row = $("<div>").attr("class", "row");
+  $("#resStream").append(row);
+
+  for (var i = 0; i < response.results[0].locations.length; i++) {
+    var streamApp = response.results[0].locations[i].display_name;
+    console.log(streamApp);
+
+    var streamIcon = response.results[0].locations[i].icon;
+    console.log(streamIcon);
+
+    var streamLink = response.results[0].locations[i].url;
+
+    var d1 = $("<div>").attr("class", "col s6");
+    var iconEl = $("<img>");
+    iconEl.attr("src", streamIcon);
+    iconEl.attr("alt", streamApp);
+    iconEl.attr("id", "iconEL");
+
+    var linkEl = $("<a>")
+      .attr("href", streamLink)
+      .text("Click to Access App Streamer");
+
+    row.append(d1);
+    d1.append(iconEl, linkEl);
+
+    //;row.append(iconEl, linkEl);
+
+    ///sytax;
+  }
 });
