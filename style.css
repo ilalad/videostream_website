@@ -65,8 +65,9 @@ header {
 
 /*Global classes*/
 body {
-  color: #40404f;
-  background-color: #8abad3ff;
+  color: whitesmoke;
+  background-image: url(shutterstock_740398456.jpg);
+  background-position: center;
 }
 /*Nav Bar*/
 nav {
@@ -114,12 +115,12 @@ p {
 }
 .section {
   font-size: 50px;
-  float: left;
+  float: center;
   font-family: "Lobster", cursive;
   text-decoration: underline;
 }
 label {
-  color: #40404f;
+  color: whitesmoke;
   font-size: 50px;
   text-align: center;
   font-family: "Lobster", cursive;
@@ -135,21 +136,21 @@ label {
   font-size: 200%;
   width: 40%;
   height: 50px;
-  background-color: green;
+  background-color: rgb(206, 117, 15);
   border-radius: 8px;
+  color: rgb(59, 49, 49);
   font-family: "Lobster", cursive;
   border: none;
   cursor: pointer;
 }
 #searchMovieBtn:hover {
-  background-color: #50c878;
+  background-color: rgb(165, 116, 61);
 }
 #searchMovieBtn:active {
-  box-shadow: 0 5px #666;
+  box-shadow: 0 5px whitesmoke;
   transform: translateY(4px);
 }
-::placeholder {
-  color: #40404f;
+#placeholder {
   opacity: 50%;
 }
 #userMovieInput {
@@ -158,9 +159,19 @@ label {
   font-size: 25px;
   height: 50px;
 }
-.titles img {
+#titles1 {
   background-color: #8abad3ff;
 }
+
+#titles2 {
+  background-color: #8abad3ff;
+}
+
+#titles3 {
+  background-color: #8abad3ff;
+  text: center;
+}
+
 .slider .slides li img {
   height: 100%;
   width: 100%;
@@ -176,9 +187,25 @@ label {
 }
 
 #results {
-  background-color: #8abad3ff;
+  background: transparent;
 }
 
 a {
-  color: black;
+  color: whitesmoke;
+}
+
+#buttonStyle {
+  margin-top: 20px;
+  margin-bottom: 20;
+  padding: 20px;
+  width: 300px;
+  background-color: bisque;
+}
+
+#popSec {
+  background: transparent;
+}
+
+#streamApp {
+  text-align: center;
 }
