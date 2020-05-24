@@ -9,3 +9,5 @@ Click on the link below for an easy access to our application
 https://tuhituhi18.github.io/project1_movie/ version1 5.22.2020
 
 Future dev ideas:
+Add section with popular movies and series
+Add pages with movies and series sorted by Genre, that user can choose from.
