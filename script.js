@@ -31,7 +31,7 @@ $(document).ready(function () {
 
             console.log(trailerUrl);
 
-            $("#youVid").append(`<iframe width="900" height="400" src="${trailerUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+            $("#youVid").append(`<iframe width="100%" height="600" src="${trailerUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
 
 
 
