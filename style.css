@@ -16,22 +16,6 @@ nav {
 /*About section*/
 header {
   font-family: "Be Vietnam", sans-serif;
-  color: white;
-  background-image: url(shutterstock_740398456.jpg);
-  background-position: center;
-}
-/*Nav Bar*/
-nav {
-  text-align: center;
-  height: 100px;
-  background-color: rgba(64, 64, 79, 0.521);
-}
-#sNav {
-  font-size: 500%;
-}
-/*About section*/
-header {
-  font-family: "Be Vietnam", sans-serif;
   text-align: center;
 }
 #about {
@@ -93,7 +77,6 @@ p {
 }
 .section {
   font-size: 50px;
-  /* float: center; */
   font-family: "Lobster", cursive;
   text-decoration: underline;
 }
@@ -275,10 +258,6 @@ buttonStyle {
   width: 75%;
   background-color: rgb(206, 117, 15);
 }
-
-/* #player {
-  float: center;
-} */
 
 #youVid {
   position: absolute;
