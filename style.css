@@ -37,22 +37,7 @@ header {
 .save {
   font-size: 30px;
 }
-/*Nav Bar*/
-p {
-  font-size: 30px;
-  display: inline;
-}
-.titles {
-  text-align: center;
-}
-#about {
-  padding-right: 30px;
-  text-decoration: underline;
-}
-.stron {
-  font-family: "Saira Stencil One", cursive;
-  margin-top: 0%;
-}
+
 #sP #spP {
   display: inline;
 }
@@ -60,13 +45,7 @@ p {
   display: inline;
   text-align: center;
 }
-#sBtm {
-  font-size: 30px;
-}
-.save {
-  font-size: 30px;
-}
-/*Nav Bar*/
+
 p {
   font-size: 30px;
   display: inline;
@@ -93,6 +72,16 @@ label {
 #want {
   display: inline;
 }
+
+#userMovieInput {
+  text-align: center;
+  font-family: "Saira Stencil One", cursive;
+  font-size: 25px;
+  height: 50px;
+  color: rgb(253, 252, 250);
+  background-color: rgba(216, 204, 173, 0.178);
+}
+
 #searchMovieBtn {
   font-size: 30px;
   width: 200px;
@@ -102,6 +91,8 @@ label {
   color: whitesmoke;
   border: none;
   cursor: pointer;
+  font-family: "Saira Stencil One", cursive;
+  margin-top: 0%;
 }
 #searchMovieBtn:hover {
   background-color: rgb(165, 116, 61);
@@ -114,81 +105,7 @@ label {
   color: rgb(230, 229, 201);
   opacity: 50%;
 }
-#userMovieInput {
-  text-align: center;
-  font-family: "Saira Stencil One", cursive;
-  font-size: 25px;
-  height: 50px;
-  color: rgb(253, 252, 250);
-  background-color: rgba(216, 204, 173, 0.178);
-}
-label {
-  color: whitesmoke;
-  font-size: 50px;
-  text-align: center;
-  font-family: "Lobster", cursive;
-  text-decoration: underline;
-}
-#have {
-  display: inline;
-}
-#want {
-  display: inline;
-}
-#searchMovieBtn {
-  font-size: 30px;
-  width: 200px;
-  height: 47px;
-  background-color: rgb(206, 117, 15);
-  border-radius: 8px;
-  color: whitesmoke;
-  border: none;
-  cursor: pointer;
-}
-#searchMovieBtn:hover {
-  background-color: rgb(165, 116, 61);
-}
-#searchMovieBtn:active {
-  box-shadow: 0 5px rgb(207, 183, 105);
-  transform: translateY(4px);
-}
-::placeholder {
-  color: rgb(230, 229, 201);
-  opacity: 50%;
-}
-#userMovieInput {
-  text-align: center;
-  font-family: "Saira Stencil One", cursive;
-  font-size: 25px;
-  height: 50px;
-  color: rgb(253, 252, 250);
-  background-color: rgba(216, 204, 173, 0.178);
-}
-#titles1 {
-  background: transparent;
-}
-.slider .slides li img {
-  height: 100%;
-  width: 100%;
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.footer-copyright {
-  text-align: center;
-}
-#copyright {
-  font-size: 20px;
-}
 
-#results {
-  background: transparent;
-}
-
-a {
-  width: 200px;
-  color: rgb(156, 183, 199);
-}
 #titles1 {
   background: transparent;
 }
@@ -206,21 +123,6 @@ a {
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
-}
-.footer-copyright {
-  text-align: center;
-}
-#copyright {
-  font-size: 20px;
-}
-
-#results {
-  background: transparent;
-}
-
-a {
-  width: 200px;
-  color: rgb(156, 183, 199);
 }
 
 buttonStyle {
@@ -263,4 +165,15 @@ buttonStyle {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+.footer-copyright {
+  text-align: center;
+}
+
+#results {
+  background: transparent;
+}
+
+#copyright {
+  font-size: 20px;
 }
