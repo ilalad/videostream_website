@@ -6,6 +6,7 @@ body{
 
     background-image: url(shutterstock_740398456.jpg);
     background-position: center;
+    
   
     
     
@@ -192,11 +193,11 @@ border-width: 20px;
   background-color: darkgreen;
   }
   
-  #iconStyle:hover{
+  #iconStyle:hover {
   width: 75%;
   background-color:rgb(206, 117, 15);
-
-
+  
+  }
 
 
 .row {
@@ -209,10 +210,3 @@ border-width: 20px;
   float: center;
 }
 
-
-#youVid{
-
-  position: absolute; top:0px; left: 0px;
-
-
-}
