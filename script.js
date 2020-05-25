@@ -25,8 +25,8 @@ $(document).ready(function () {
       var youtubeVideoId = response.items[0].id.videoId;
       var trailerUrl = "https://www.youtube.com/embed/" + youtubeVideoId;
 
-      $("#youVid").append(
-        `<iframe width="900" height="400" src="${trailerUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+      $("#youVid").attr("class", "video-container").append(
+        `<iframe width="600" height="400" src="${trailerUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
       );
     });
 
