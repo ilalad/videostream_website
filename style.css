@@ -1,7 +1,6 @@
 /*Global classes*/
 body {
   color: white;
-  scrollbar-3dlight-color: rgb(169, 172, 32);
   background-image: url(shutterstock_740398456.jpg);
   background-position: center;
 }
@@ -18,7 +17,6 @@ nav {
 header {
   font-family: "Be Vietnam", sans-serif;
   color: white;
-  scrollbar-3dlight-color: rgb(169, 172, 32);
   background-image: url(shutterstock_740398456.jpg);
   background-position: center;
 }
@@ -44,9 +42,7 @@ header {
   font-family: "Saira Stencil One", cursive;
   margin-top: 0%;
 }
-#sP {
-  display: inline;
-}
+
 #shows {
   display: inline;
   text-align: center;
@@ -73,10 +69,10 @@ p {
   font-family: "Saira Stencil One", cursive;
   margin-top: 0%;
 }
-#sP {
+#sP #spP {
   display: inline;
 }
-#shows {
+#shows #shows1 {
   display: inline;
   text-align: center;
 }
@@ -97,7 +93,7 @@ p {
 }
 .section {
   font-size: 50px;
-  float: center;
+  /* float: center; */
   font-family: "Lobster", cursive;
   text-decoration: underline;
 }
@@ -280,14 +276,12 @@ buttonStyle {
   background-color: rgb(206, 117, 15);
 }
 
-#player {
+/* #player {
   float: center;
-}
+} */
 
-
-#youVid{
-
-  position: absolute; top:0px; left: 0px;
-
-
+#youVid {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }

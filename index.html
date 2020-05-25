@@ -1,122 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stream On</title>
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <h1 class="stron" id="sNav">StreamOn</h1>
+      <h1 class="stron" id="sNav">StreamOn</h1>
     </nav>
     <header>
-        <!--About section-->
-        <div class="container">
-            <br>
+      <!--About section-->
+      <div class="container">
+        <br />
 
-            <h2 class="section" id="about">About </h2>
-            <p class="stron" id="sP">
-            <p id="shows">Ever wasted countless time trying to find which streaming app has your movie or
-                series?</p>
-            <br>
+        <h2 class="section" id="about">About</h2>
+        <p class="stron" id="sP"></p>
+        <p id="shows">
+          Ever wasted countless time trying to find which streaming app has your
+          movie or series?
+        </p>
+        <br />
 
-            <p class=stron id="sP">StreamOn
-            <p id="shows"> has unlimited access to all major streaming services. Lets us serve as your
-                "single-source" app search engine for all movies and series.</p>
-            <br>
-            <p id="want">Have a movie or series in mind? Enter it below and let us find your stream!</p>
-            <br>
-            <br>
-            <p class="save">Save time,
-            <p class="stron" id="sBtm">StreamOn!</p>
-        </div>
+        <p class="stron" id="spP">StreamOn</p>
+        <p id="shows1">
+          has unlimited access to all major streaming services. Let us serve as
+          your "single-source" app search engine for all movies and series.
+        </p>
+        <br />
+        <p id="want">
+          Have a movie or series in mind? Enter it below and let us find your
+          stream!
+        </p>
+        <br />
+        <br />
+        <p class="save">Save time,</p>
+        <p class="stron" id="sBtm">StreamOn!</p>
+      </div>
     </header>
     <!--Popular-->
-    <div id=title1 class="titles">
+    <!-- <div id=title1 class="titles">
         <br>
         <br>
-        <br>
-        <!--Search-->
-        <div id=title2 class="titles">
-            <br>
-            <div class="container" style="text-align: center;">
-                <form>
-                    <!--Search Bar title-->
-                    <label for="mname">Enter your Movie or Series Here</label>
-                    <br>
-                    <br>
-                    <!--Search Bar-->
-                    <input type="text" id="userMovieInput" name="mname" placeholder="example: Back to the Future">
-                    <br>
-                    <!--Search Btn-->
-                    <button id="searchMovieBtn" class=stron type="button">StreamOn</button>
-                    <br>
-                </form>
-            </div>
-        </div>
+        <br> -->
+    <!--Search-->
+    <div id="title2" class="titles">
+      <br />
+      <div class="container" style="text-align: center;">
+        <form>
+          <!--Search Bar title-->
+          <label id="mname">Enter your Movie or Series Here</label>
+          <br />
+          <br />
+          <!--Search Bar-->
+          <input
+            type="text"
+            id="userMovieInput"
+            name="mname"
+            placeholder="example: Back to the Future"
+          />
+          <br />
+          <!--Search Btn-->
+          <button id="searchMovieBtn" class="stron" type="button">
+            StreamOn
+          </button>
+          <br />
+        </form>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div>
+      <div id="resStream" class="container"></div>
+    </div>
+    <br />
+    <div class="container">
+      <div id="youVid"></div>
+    </div>
+    <!--Services/Logos-->
+    <div id="title3" class="titles">
+      <div class="container">
+        <p class="section">Popular Streaming Apps</p>
+        <br />
+        <!--Images-->
+        <div class="slider">
+          <ul id="popSec" class="slides">
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/26/Hulu_logo_%282007%29.svg"
+                alt="Hulu logo"
+              />
+            </li>
 
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+                alt="Netflix logo"
+              />
+            </li>
 
-        <br>
-        <br>
-        <div>
-            <div id="resStream" class="container">
-            </div>
-        </div>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amazon_Prime_Video_logo.svg/1200px-Amazon_Prime_Video_logo.svg.png"
+                alt="Amazon Prime logo"
+              />
+            </li>
 
-
-        <br>
-        <div class="container">
-            <div id="youVid">
-            </div>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg"
+                alt="Disney Plus logo"
+              />
+            </li>
+          </ul>
         </div>
-        <!--Services/Logos-->
-        <div id="title3" class="titles">
-            <div class="container">
-                <p class="section"> Popular Streaming Apps </p>
-                <br>
-                <!--Images-->
-                <div class="slider">
-                    <ul id="popSec" class="slides">
-                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Hulu_logo_%282007%29.svg"
-                                alt="Hulu logo"></li>
-                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
-                                alt="Netflix logo"></li>
-                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amazon_Prime_Video_logo.svg/1200px-Amazon_Prime_Video_logo.svg.png"
-                                alt="Amazon Prime logo"></li>
-                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg"
-                                alt="Disney Plus logo"></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <!--Footer-->
-        <div class="footer-copyright">
-            <div class="container">
-                <p id="copyright">© Copyright 2020
-    </p>
-            </div>
-        </div>
-        <br>
-        <br>
-        <!--JavaScript at end of body for optimized loading-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="script.js"></script>
-</body>
-
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--Footer-->
+    <div class="footer-copyright">
+      <div class="container">
+        <p id="copyright">© Copyright 2020</p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

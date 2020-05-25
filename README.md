@@ -16,5 +16,4 @@ Add a sign up page to track users
 Improvements and Enhancements:
 Trailer video's content to be more responsive
 Button icons -improvement to reflect the actual brand logos
-Get the function on the stream on search button
-
+Get the "Enter" function on the StreamOn search button
