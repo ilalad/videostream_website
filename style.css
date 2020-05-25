@@ -1,212 +1,177 @@
 /*Global classes*/
-/*Global classes*/
-body{
-    color:  white;
-    scrollbar-3dlight-color: rgb(169, 172, 32);
-
-    background-image: url(shutterstock_740398456.jpg);
-    background-position: center;
-    
-  
-    
-    
-  }
-  /*Nav Bar*/
-  nav{
-    text-align: center;
-    height: 100px;
-    background-color:  rgba(64, 64, 79, 0.521);
-    
-    
-  }
-  #sNav{
+body {
+  color: white;
+  background-image: url(shutterstock_740398456.jpg);
+  background-position: center;
+}
+/*Nav Bar*/
+nav {
+  text-align: center;
+  height: 100px;
+  background-color: rgba(64, 64, 79, 0.521);
+}
+#sNav {
   font-size: 500%;
-  }
-  /*About section*/
-  header{
-      font-family: 'Be Vietnam', sans-serif;   
-      text-align: center;
-  }
-  #about{
-    padding-right: 30px;
-    text-decoration: underline;
-  }
-  .stron {
-    font-family: 'Saira Stencil One', cursive;
-    margin-top: 0%;
-  }
-  #sP{
-    display: inline;
-  }
-  #shows{
-    display: inline;
-    text-align:center;
-  }
-  #sBtm{
-   font-size: 30px;
-  }
-  .save{
-    font-size: 30px;  
-  }
-  /*Nav Bar*/
-  p{
-    font-size: 30px;
-    display: inline;
-  }
-  .titles{
-    text-align: center;
-    font-family: 'Puritan', sans-serif;
-  }
-  .section{
-  font-size: 50px;
-  float: center;
-  font-family: 'Lobster', cursive;
+}
+/*About section*/
+header {
+  font-family: "Be Vietnam", sans-serif;
+  text-align: center;
+}
+#about {
+  padding-right: 30px;
   text-decoration: underline;
-  }
-  label{
-    color: whitesmoke;
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Lobster', cursive;
-    text-decoration: underline;
-  }
-  #have{
-   display: inline;
-  }
-  #want{
-   display: inline;
-  }
-  #searchMovieBtn{
-    font-size: 30px;
-    width: 200px;
-    height: 47px;
-    background-color:rgb(206, 117, 15);
-    border-radius: 8px;
-    color:whitesmoke;
-    border: none;
-    cursor: pointer;
-  }
-  #searchMovieBtn:hover {
-  background-color: rgb(165, 116, 61);
-  }
-  #searchMovieBtn:active {
-    box-shadow: 0 5px rgb(207, 183, 105);
-    transform: translateY(4px);
-  }
-  ::placeholder{
-    color:rgb(230, 229, 201);
-    opacity: 50%;
-  }
-  #userMovieInput{
-    text-align: center;
-    font-family: 'Saira Stencil One', cursive;
-    font-size: 25px;
-    height: 50px;
-    color: rgb(253, 252, 250);
-    background-color: rgba(216, 204, 173, 0.178);
-
-    
-  }
-  #titles1 {
-    background: transparent;
-  ;
- 
-  }
-
-  #titles2 {
-   ;
- 
-  }
-
-
-  #titles3 {
-    
-  ;
- 
-  }
-
-
-
-
-  .slider .slides li img {
-    height: 100%;
-    width: 100%;
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .footer-copyright{
-    text-align: center;
-  }
-  #copyright{
-    font-size: 20px;
-  }
-  
-  #results {
-    background: transparent;
-  }
-  
-  
-a {
-  width: 200px;
-  color:rgb(156, 183, 199);
-  
-  
+}
+.stron {
+  font-family: "Saira Stencil One", cursive;
+  margin-top: 0%;
 }
 
+#shows {
+  display: inline;
+  text-align: center;
+}
+#sBtm {
+  font-size: 30px;
+}
+.save {
+  font-size: 30px;
+}
+
+#sP #spP {
+  display: inline;
+}
+#shows #shows1 {
+  display: inline;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+  display: inline;
+}
+.titles {
+  text-align: center;
+  font-family: "Puritan", sans-serif;
+}
+.section {
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+  text-decoration: underline;
+}
+label {
+  color: whitesmoke;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  text-decoration: underline;
+}
+#have {
+  display: inline;
+}
+#want {
+  display: inline;
+}
+
+#userMovieInput {
+  text-align: center;
+  font-family: "Saira Stencil One", cursive;
+  font-size: 25px;
+  height: 50px;
+  color: rgb(253, 252, 250);
+  background-color: rgba(216, 204, 173, 0.178);
+}
+
+#searchMovieBtn {
+  font-size: 30px;
+  width: 200px;
+  height: 47px;
+  background-color: rgb(206, 117, 15);
+  border-radius: 8px;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  font-family: "Saira Stencil One", cursive;
+  margin-top: 0%;
+}
+#searchMovieBtn:hover {
+  background-color: rgb(165, 116, 61);
+}
+#searchMovieBtn:active {
+  box-shadow: 0 5px rgb(207, 183, 105);
+  transform: translateY(4px);
+}
+::placeholder {
+  color: rgb(230, 229, 201);
+  opacity: 50%;
+}
+
+#titles1 {
+  background: transparent;
+}
+
+#titles2 {
+  width: 100%;
+  height: 100px;
+  float: inline-end;
+  background-color: #a58565a1;
+}
+
+.slider .slides li img {
+  height: 100%;
+  width: 100%;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 buttonStyle {
- width: 100%;
- height: 100px;
- float: inline-end;
-background-color: #a58565a1;
-
+  width: 100%;
+  height: 100px;
+  float: inline-end;
+  background-color: #a58565a1;
 }
-
-
 
 #popSec {
   background: transparent;
 }
 
-
 #streamApp {
-
   text-align: center;
 }
 
 #iconStyle {
-background-color:rgba(245, 222, 179, 0.445);
-height:10%;
-width: 75%;
-padding: 10%;
-border: rgb(231, 209, 204);
-border-radius: initial ;
-border-color: whitesmoke ;
-border-radius: 20px;
-border-width: 20px;
-
+  background-color: rgba(245, 222, 179, 0.445);
+  height: 10%;
+  width: 75%;
+  padding: 10%;
+  border: rgb(231, 209, 204);
+  border-radius: initial;
+  border-color: whitesmoke;
+  border-radius: 20px;
+  border-width: 20px;
 }
 
 #iconStyle:active {
-
   background-color: darkgreen;
-  }
-  
-  #iconStyle:hover {
+}
+
+#iconStyle:hover {
   width: 75%;
-  background-color:rgb(206, 117, 15);
-  
-  }
-
-
-.row {
-
-
+  background-color: rgb(206, 117, 15);
 }
 
-#player{
+#youVid {
 
-  float: center;
+}
+.footer-copyright {
+  text-align: center;
 }
 
+#results {
+  background: transparent;
+}
+
+#copyright {
+  font-size: 20px;
+}
